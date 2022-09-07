@@ -1,22 +1,25 @@
 * {
-    font-family: sans-serif;
+    font-family: "Roboto",sans-serif;
 }
 
-html,
-body, 
-main, f
-footer {
-    height: 100%;
-   
-} 
-
 body {
-    margin: 0 auto;
+    margin: 0;
 }
 
 header,
 footer {
-    background-color: rgb(239, 164, 155);
+    background-color: rgb(240, 180, 173);
+    align-items: center;
+}
+
+.wrapper {
+    width: 900px;
+    margin: 0 auto;
+}
+
+header > .wrapper {
+    display: flex;
+    justify-content: space-between;
 }
 
 a {
@@ -24,18 +27,12 @@ a {
    text-decoration: none; 
 }
 
-main {
+main { 
     display: flex;
     flex-direction: column;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-
-}
-
-header img {
+header > .wrapper > img {
     height: 50px;
     width: 50px;
     padding: 5px 20px;
@@ -62,48 +59,68 @@ section {
     padding: 5px;
 }
 
-.art-container {
+main > .wrapper {
     display: flex;
     flex-direction: column;
     gap: 7px;
 }
 
-.art-container > img {
+.wrapper > img {
     width: 250px;
     float: right;
 }
 
 .pink {
-    background-color:rgb(188, 188, 163);
+    background-color:rgb(240, 240, 220);
 }
 
-.bad-art-classification {
+.pink p:last-child {
+    padding-bottom: 20px;
+}
+
+.bad-art {
     display: flex;
-    gap: 15px;
+    justify-content: center;
+    gap: 30px;
 }
 
-.bad-art-classification > ul {
-    border: 1px solid black;
+.bad-art  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    width: 400px;
+    margin-bottom: 40px;
+    padding: 0 25px 15px 25px;
+    border: 1px solid rgb(133, 110, 110);
     border-radius: 20px;
     list-style: none;
 }
 
-.bad-art-classification > ul > li {
-    text-decoration: underline;
+.bad-art li {
+    padding: 5px 0;
+    border-bottom: 1px solid black;
 }
+
+.bad-art a {
+    color: black;
+}
+
 
 .stock-art-img {
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    justify-content: space-around;
 }
 
 .stock-art-img > img {
     width: 100px;
     height: 100px;
     border-radius: 100%;
+    margin-bottom: 20px;
 }
 
-footer {
+footer p {
+    padding: 10px;
+    margin: 0;
     text-align: center;
 }
