@@ -1,15 +1,14 @@
 * {
-    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 body {
     margin: 0;
-}
-
-header,
-footer {
-    background-color: rgb(240, 180, 173);
-    align-items: center;
 }
 
 .wrapper {
@@ -17,114 +16,137 @@ footer {
     margin: 0 auto;
 }
 
-header > .wrapper {
+header {
+    background-color: rgb(151, 53, 53);
+    color: white;
+}
+
+header img {
+    height: 40px;
+}
+
+header nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
 }
 
-a {
-   color: white;
-   text-decoration: none; 
-}
-
-main { 
+header nav ul {
     display: flex;
-    flex-direction: column;
-}
-
-header > .wrapper > img {
-    height: 50px;
-    width: 50px;
-    padding: 5px 20px;
-}
-
-header ul {
-    display: flex;
+    gap: 20px;
     list-style: none;
 }
 
-header li {
-    margin-right: 20px;
+header nav ul li:last-child a {
+    border: 1px solid white;
+    padding: 15px 5px;
+    border-radius: 5px;
 }
 
-section {
-    margin: 0 auto;
-    border-bottom: 1px solid rgb(79, 75, 75);
+header nav ul li a:hover {
+    border: 1px solid white;
+    padding: 15px 5px;
+    border-radius: 5px;
 }
 
-h1,
-section {
-    background-color: rgb(248, 231, 209);
-    margin: 0;
+.hero {
+    background-image: url(https://rekvizitai.vz.lt/photos/uab_alynas-983.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero .wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items:flex-end;
+    min-height: 200px;  
+    height: 30vh;
+}
+h1 {
+    background-color: rgba(151, 53, 53, .7);
     padding: 5px;
 }
 
-main > .wrapper {
+h2 {
+    color: rgb(151, 53, 53);
+}
+
+.article-list {
     display: flex;
-    flex-direction: column;
-    gap: 7px;
+    flex-wrap: wrap;
+    gap: 3px;
 }
 
-.wrapper > img {
-    width: 250px;
-    float: right;
-} 
-
-.paragragh {
-    border-bottom: none;
+.article-card {
+    width: calc(25% - 3px);
+    background-color: rgb(151, 53, 53);
+    color: white;
 }
 
-.pink {
-    background-color:rgb(240, 240, 220);
+.article-card:not(nth-child(4n)) {
+    margin-right: 4px;
 }
 
-.pink p:last-child {
-    padding-bottom: 20px;
-}
-
-.bad-art {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-.bad-art  ul {
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-    width: 400px;
-    margin-bottom: 40px;
-    padding: 0 25px 15px 25px;
-    border: 1px solid rgb(133, 110, 110);
-    border-radius: 20px;
-    list-style: none;
-}
-
-.bad-art li {
-    padding: 5px 0;
-    border-bottom: 1px solid black;
-}
-
-.bad-art a {
-    color: black;
-}
-
-
-.stock-art-img {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.stock-art-img > img {
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    margin-bottom: 20px;
-}
-
-footer p {
-    padding: 10px;
-    margin: 0;
+.article-card h3 {
     text-align: center;
 }
+
+.article-card p {
+    margin-left: 10px;
+}
+
+.article-card img {
+    width: 100%;
+    height: 200px;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+}
+
+.article-form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 8px;
+}
+.article-form input,
+textarea {
+    padding: 8px;
+    border: 1px solid rgb(175, 171, 171);
+    color: rgb(141, 137, 137);
+}
+
+.article-form input:last-child {
+    width: 30%;
+    color: rgb(63, 61, 61);
+    border: 1px solid rgb(192, 58, 58);
+    background-color: white;
+}
+
+iframe {
+    flex: 1;
+    margin-top: 8px;
+}
+
+
+footer {
+    color: white;
+    background-color: rgb(151, 53, 53);
+    text-align: center;
+    padding: 5px;
+}
+    
+
+
+
+
+
+
+
+
+
+
