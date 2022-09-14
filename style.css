@@ -129,14 +129,14 @@ textarea {
 
 iframe {
     flex: 1;
-   
+    margin-bottom: 12px;
 }
 
 footer {
     color: white;
     background-color: rgb(151, 53, 53);
     text-align: center;
-    padding: 5px;
+    padding: 7px;
 }
     
 
