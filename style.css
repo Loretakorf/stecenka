@@ -1,210 +1,61 @@
-
-* {
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-body {
-    margin: 0;
-    
-}
-h1, h2, h3, h4 {
-    font-weight: 300;
-} 
-h4 {
-    color: grey;
-}
-.wrapper {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 30px;
-} 
-header {
-    background-color: white;
-   
-}
-.logo {
-    padding: 10px 15px;
-}
-.logo:hover {
-    background-color: rgb(210, 206, 202);
-}
-.logo a {
-    color: grey;
-    text-decoration: none;
-    cursor: pointer;
-}
-.logo span {
-    padding-right: 10px;
-    font-size: 14px;
-}
-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header nav ul {
-    display: none;
-    gap: 20px;
-    list-style: none;
-}
-header nav ul li a {
-    color: grey;
-    text-decoration: none;
-    padding: 10px 15px;
-    cursor: pointer;
-}
-header nav ul li a:hover {
-   
-    background-color: rgb(210, 206, 202);
-}
-.hero {
-    background-image: url(https://img.freepik.com/free-photo/white-cloud-blue-sky-sea_74190-4488.jpg?w=2000);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-top: 1px solid rgb(44, 43, 43);
-}
-.hero .wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 200px;
-    height: 50vh;
-}
-.hero .wrapper .centertext h1 .secondtext {
-    display: none;
-    color: white;
-}
-.hero .wrapper .centertext h1 .firsttext {
-    padding: 7px 12px;
-    background-color: rgb(44, 43, 43);
-    color: white;
-    font-size: 24px;
-}
-.project-list {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    margin: 0 auto;
-    row-gap: 14px;
-    
-}
-.project-img {
-    width: 100%;
-    position: relative;
-}
-
-.project-img img {
-    width: 100%;
-    vertical-align: middle;
-}
-.project-img h3  {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0;
-    color: white;
-    background-color: rgb(44, 43, 43);
-    padding: 5px;
-}
-.wrapper h2 {
-    padding: 20px 0;
-}
-.container {
-    display: flex;
-    flex-direction: column;
-    row-gap: 14px;
-}
-.project-comand img {
-    width: 100%;
-    vertical-align: middle;
-}
-.project-comand input {
-    border: none;
-    background-color: rgb(252, 252, 242);
-    width: 100%;
-    padding: 12px;
-}
-.project-comand input:hover {
-    background-color: rgb(210, 206, 202);
-}
-.form form {
-    display: flex;
-    flex-direction: column;
-    row-gap: 14px;
-
-    width: 100%;
-}
-form input {
-    padding: 12px;
-}
-form button {
-    width: 25%;
-    color: white;
-    text-transform: uppercase;
-    background-color: rgb(44, 43, 43);
-    border: none;
-}
-form button:hover {
-    color: black;
-    background-color:rgb(210, 206, 202);
-}
-.form img {
-    margin: 35px 0 10px 0;
-    width: 100%;
-}
-footer {
-    background-color: rgb(44, 43, 43);
-    color: white;
-    padding: 10px;
-    text-align: center;
-}
-
-@media only screen and (min-width: 678px) {
-    header nav ul {
+@media screen and (min-width: 300px) {
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        background-color: green;
+    }
+    .container {
+        padding: 20px;
+    }
+    .wrapper {
+        background-color: green;
         display: flex;
+        flex-direction: column;
+        gap: 14px;
     }
-    .hero .wrapper .centertext h1 .secondtext {
-        display: inline;
+    div {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
     }
-    .project-list {
-        flex-direction: row;
-        flex-wrap: wrap;
-        column-gap: 4px;
-    }
-    .project-img, .project-comand { 
-        width: calc(50% - 3px);
-    }
-    .project-img:not(nth-child(2n)) {
-        margin-right: 4px;
-    }
-    .container {
-        flex-direction: row;
-        flex-wrap: wrap;
-        column-gap: 4px;
-    }
-    .project-comand:not(nth-child(2n)) {
-        margin-right: 4px;
-    }
-    form button {
-        padding: 12px;
-    }
-    
-}
+    h1,
+    p,
+    footer {
+        padding: 12px 24px;
+        margin: 0;
 
-@media only screen and (min-width: 1200px) {
-   
-    .project-img { 
-        width: calc(25% - 3px);
     }
-    .project-img:not(nth-child(4n)) {
-        margin-right: 4px;
+    img {
+        width: 100%;
+        object-fit: cover;
     }
-    .container {
-        flex-wrap: nowrap;
+    p {
+        font-size: 18px;
+    }
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 12px;
     }
 }
+@media screen and (min-width: 900px) {
+    .container {
+        padding: 0 150px;
+        width: 100%;
+    }
+    .wrapper {
+        flex-wrap: wrap;
+        height: 1340px;
+    }
+    .first {
+        width: 60%;
+    }
+    div {
+        width: 40%;
+    }
+}
+ 
 
 
 
