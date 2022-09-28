@@ -4,74 +4,56 @@
 body {
     background-color: green;
 }
-.container {
-    padding: 25px;
-}
-.wrapper {
-    background-color: green;
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-}
-.big-content {
-    background-color: green;
-    gap: 14px;
-}
-.small-content {
-    background-color: green;
-    gap: 14px;
-} 
-div {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-}
-h1,
-p,
-footer {
-    padding: 20px 24px 8px 24px;
-    margin: 0;
-}
 img {
     width: 100%;
     object-fit: cover;
 }
-p {
-    font-size: 16px;
+main, 
+div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+article {
+    background-color: white;
+}
+section {
+    padding: 20px;
+}
+span {
+    color: grey;
 }
 footer {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 12px;
 }
-
 @media screen and (min-width: 900px) {
-    .container {
-        padding: 25px 150px;
-    }
     .wrapper {
-        display: flex;
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+    main {
         flex-direction: row;
-        flex-wrap: wrap;
     }
     .big-content {
-        flex-direction: column;
         flex: 2;
     }
-    .small-content {
-        flex-direction: column;
+    .small-content, p {
         flex: 1;
     }
-    .first {
-        flex-basis: 60%;
-        flex-shrink: 1;
-    }
-    div {
-        flex-basis: 40%;
-        flex-shrink: 1;
+    article,
+    section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
     }
 }
- 
+
+
+
+
+
+
 
 
 
