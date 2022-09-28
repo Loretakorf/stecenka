@@ -1,58 +1,76 @@
-@media screen and (min-width: 300px) {
-    * {
-        box-sizing: border-box;
-    }
-    body {
-        background-color: green;
-    }
-    .container {
-        padding: 20px;
-    }
-    .wrapper {
-        background-color: green;
-        display: flex;
-        flex-direction: column;
-        gap: 14px;
-    }
-    div {
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-    }
-    h1,
-    p,
-    footer {
-        padding: 12px 24px;
-        margin: 0;
-
-    }
-    img {
-        width: 100%;
-        object-fit: cover;
-    }
-    p {
-        font-size: 18px;
-    }
-    footer {
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 12px;
-    }
+* {
+    box-sizing: border-box;
 }
+body {
+    background-color: green;
+}
+.container {
+    padding: 25px;
+}
+.wrapper {
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.big-content {
+    background-color: green;
+    gap: 14px;
+}
+.small-content {
+    background-color: green;
+    gap: 14px;
+} 
+div {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+h1,
+p,
+footer {
+    padding: 20px 24px 8px 24px;
+    margin: 0;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+p {
+    font-size: 16px;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 12px;
+}
+
 @media screen and (min-width: 900px) {
     .container {
-        padding: 0 150px;
+        padding: 25px 150px;
         width: 100%;
+        margin: 0 auto;
     }
     .wrapper {
+        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
-        height: 1340px;
+    }
+    .big-content {
+        flex-direction: column;
+        flex: 2;
+    }
+    .small-content {
+        flex-direction: column;
+        flex: 1;
     }
     .first {
-        width: 60%;
+        flex-basis: 60%;
+        flex-shrink: 1;
     }
     div {
-        width: 40%;
+        flex-basis: 40%;
+        flex-shrink: 1;
     }
 }
  
