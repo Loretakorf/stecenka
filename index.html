@@ -13,17 +13,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <div class="layout">
+<body class="layout">
+   
         <header class="header">
-            <div class="header__logo">
+            <nav class="header__navigation">
                 <picture class="header__picture">
                     <source srcset="img/logosmall.jpeg" type="jpeg/image" media="(max-width: 500px)">
                     <source srcset="img/logomedium.jpeg" type="jpeg/image" media="(min-width: 500px)">
                     <img src="/img/logomedium.jpeg" alt="logosmall">
                 </picture>
-            </div>
-            <nav class="header__navigation">
+            
                 <ul class="header__list">
                     <li class="header__list-item">Item</li>
                     <li class="header__list-item">Item</li>
@@ -105,22 +104,25 @@
             </div>
 
             <h1>Contact Us</h1>
-            <form class="main__form" action="/index.html">
-                <input class="main__form--input" type="text" value="There's no outline">
-                <input class="main__form--input" type="text" value="Font-size is 1rem">
-                <input class="main__form--input" type="email" id="email" name="email" value="Enter your email">
-                <div class="main__form--left">
-                    <label for="flexbox">Flexbox</label>
-                    <br>
-                    <input type="checkbox" id="flexbox" name="flexbox">
-                </div>
-                <div class="main__form--right">
-                    <label  for="grid">Grid</label>
-                    <br>
-                    <input type="checkbox" id="grid" name="grid">
-                </div>
-                <input class="main__form--input--submit" type="submit" value="A Button">
-            </form>
+            <section class="section__form">
+                <form class="main__form" action="/index.html">
+                    <input class="main__form--input" type="text" value="There's no outline">
+                    <input class="main__form--input" type="text" value="Font-size is 1rem">
+                    <input class="main__form--input" type="email" id="email" name="email" value="Enter your email">
+                    <div class="main__form--left">
+                        <label for="flexbox">Flexbox</label>
+                        <br>
+                        <input type="checkbox" id="flexbox" name="flexbox">
+                    </div>
+                    <div class="main__form--right">
+                        <label  for="grid">Grid</label>
+                        <br>
+                        <input type="checkbox" id="grid" name="grid">
+                    </div>
+                    <input class="main__form--input--submit" type="submit" value="A Button">
+                </form>
+            </section>
+      
         </main>
 
         <footer class="footer">
@@ -143,7 +145,7 @@
                 </div>
             
         </footer>
-    </div>
+    
 </body>
 
 </html>
