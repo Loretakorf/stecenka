@@ -68,7 +68,6 @@ strong {
 }
 .header__picture img {
     height: 60px;
-   
 }
 .header__list {
     display: none;
@@ -113,8 +112,8 @@ strong {
     margin-top: 40px;
 }
 
-.footer__footer__left--list,
-.footer__footer__right--list {
+.footer__left--list,
+.footer__right--list {
     list-style: none;
     margin: 0;
     padding: 30px 10px;
@@ -127,17 +126,16 @@ strong {
         "header header header"
         ". main ."
         "footer footer footer";
-        grid-template-columns: auto minmax(800px,1200px) auto;
+        grid-template-columns: auto minmax(700px,1200px) auto;
     }
-    .header {
+    .header,
+    .footer {
         display: grid;
-        grid-template-columns: auto minmax(800px,1200px) auto ;
-       
+        grid-template-columns: auto minmax(700px,1200px) auto;
     }
     .header__navigation {
         display: grid;
         grid-column: 2;
-        grid-auto-flow: column;
     } 
     .header__picture {
         justify-self: start; 
@@ -146,7 +144,7 @@ strong {
         list-style: none;
         color: white;
         display: grid;
-        grid-template-columns: repeat(4,1fr);
+        grid-auto-flow: column;
         gap: 16px;
         align-items: center;
         justify-self: end;
@@ -155,28 +153,29 @@ strong {
         margin: 0 auto;
     }
     .main__content {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
        
     }
-    .section__form {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+    .main__h2 {
+        grid-column: span 4;
+    }
+    .main__form--h2 {
+        grid-column: span 4;
     }
     .main__form {
         grid-column: 2 / span 2;
     }
-   
-   
-    .footer {
+    .footer__navigation {
+        grid-column: 2;
+        grid-auto-flow: column;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
     }
     .footer__left {
-        grid-column: 2;
+        justify-self: start;
     }
     .footer__right {
-        grid-column: 3;
-        margin-top: 40px;
+       justify-self: start;
+       margin-top: 40px;
     }
 }
 
