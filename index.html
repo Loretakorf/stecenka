@@ -8,145 +8,55 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-
     <title>grid</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="layout">
-
-    <header class="header">
-        <nav class="header__navigation">
-            <picture class="header__picture">
-                <source srcset="img/logosmall.jpeg" type="jpeg/image" media="(max-width: 500px)">
-                <source srcset="img/logomedium.jpeg" type="jpeg/image" media="(min-width: 500px)">
-                <img src="/img/logomedium.jpeg" alt="logosmall">
-            </picture>
-
-            <ul class="header__list">
-                <li class="header__list-item">Item</li>
-                <li class="header__list-item">Item</li>
-                <li class="header__list-item">Item</li>
-                <li class="header__list-item">Item</li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="main">
-        <h1 class="main__title">Page title</h1>
-      
-        <div class="main__content">
-            <h2 class="main__h2">What we do</h2>
-            <article class="article">
-                <picture>
-                    <source srcset="/img/worksmall.jpeg" media="(max-width: 768px)">
-                    <source srcset="/img/workbig.jpeg" media="(min-width: 768px)">
-                    <img class="article__image" src="/img/workbig.jpeg" alt="">
-                </picture>
-                <h2>Any title will be uppercase</h2>
-                <p class="article__paragraph"><strong>photo</strong> above is Lorem ipsum dolor sit <strong>Any</strong>
-                    adipisicing.</p>
+<body>
+    <div class="layout">
+        <div class="left">
+            <article>
+                <h1>2009 - 2011</h1>
+                <h1>Our Humble Beginings</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing. Suscipit laborum fuga sed officiis.</p>
             </article>
-
-            <article class="article">
-                <picture>
-                    <source srcset="/img/worksmall.jpeg" media="(max-width: 768px)">
-                    <source srcset="/img/workbig.jpeg" media="(min-width: 768px)">
-                    <img class="article__image" src="/img/workbig.jpeg" alt="">
-                </picture>
-                <h2>Any title will be uppercase</h2>
-                <p class="article__paragraph"><strong>photo</strong> above is Lorem ipsum dolor sit <strong>Any</strong>
-                    adipisicing.</p>
+            <article>
+                <h1>December 2012</h1>
+                <h1>Transition To Full Service</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing. Suscipit laborum fuga sed officiis.</p>
             </article>
-
-            <article class="article">
-                <picture>
-                    <source srcset="/img/worksmall.jpeg" media="(max-width: 768px)">
-                    <source srcset="/img/workbig.jpeg" media="(min-width: 768px)">
-                    <img class="article__image" src="/img/workbig.jpeg" alt="">
-                </picture>
-                <h2>Any title will be uppercase</h2>
-                <p class="article__paragraph">
-                    <strong>photo</strong> above is Lorem ipsum dolor sit <strong>Any</strong>
-                    adipisicing.
-                </p>
-            </article>
-
-            <article class="article">
-                <picture>
-                    <source srcset="/img/worksmall.jpeg" media="(max-width: 768px)">
-                    <source srcset="/img/workbig.jpeg" media="(min-width: 768px)">
-                    <img class="article__image" src="/img/workbig.jpeg" alt="">
-                </picture>
-                <h2>Any title will be uppercase</h2>
-                <p class="article__paragraph"><strong>photo</strong> above is Lorem ipsum dolor sit <strong>Any</strong>
-                    adipisicing.</p>
-            </article>
-
-            <article class="article">
-                <picture>
-                    <source srcset="/img/worksmall.jpeg" media="(max-width: 768px)">
-                    <source srcset="/img/workbig.jpeg" media="(min-width: 768px)">
-                    <img class="article__image" src="/img/workbig.jpeg" alt="">
-                </picture>
-                <h2>Any title will be uppercase</h2>
-                <p class="article__paragraph"><strong>photo</strong> above is Lorem ipsum dolor sit <strong>Any</strong>
-                    adipisicing.</p>
-            </article>
-
-            <article class="article">
-                <picture>
-                    <source srcset="/img/worksmall.jpeg" media="(max-width: 768px)">
-                    <source srcset="/img/workbig.jpeg" media="(min-width: 768px)">
-                    <img class="article__image" src="/img/workbig.jpeg" alt="">
-                </picture>
-                <h2>Any title will be uppercase</h2>
-                <p class="article__paragraph"><strong>photo</strong> above is Lorem ipsum dolor sit <strong>Any</strong>
-                    adipisicing.</p>
-            </article>
-
-            <h2 class="main__form--h2">Contact Us</h2>
-            <form class="main__form" action="/index.html">
-                <input class="main__form--input" type="text" value="There's no outline">
-                <input class="main__form--input" type="text" value="Font-size is 1rem">
-                <input class="main__form--input" type="email" id="email" name="email" value="Enter your email">
-                <div class="main__form--left">
-                    <label for="flexbox">Flexbox</label>
-                    <br>
-                    <input type="checkbox" id="flexbox" name="flexbox">
-                </div>
-                <div class="main__form--right">
-                    <label for="grid">Grid</label>
-                    <br>
-                    <input type="checkbox" id="grid" name="grid">
-                </div>
-                <input class="main__form--input--submit" type="submit" value="A Button">
-            </form>
-        </div>      
-    </main>
-
-    <footer class="footer">
-        <nav class="footer__navigation">
-            <div class="footer__left">
-                <span class="footer__span">Contact us on the left</span>
-                <ul class="footer__left--list">
-                    <li class="footer__left--list-item"><a href="#">We're here</a></li>
-                    <li class="footer__left--list-item"><a href="#">We're here</a></li>
-                    <li class="footer__left--list-item"><a href="#">We're here</a></li>
-                </ul>
+        </div>
+        <div class="image__column">
+            <div class="active">
+                <img src="/img/photo1.png" alt="1">
             </div>
-            <div class="footer__right">
-                <span class="footer__span">Random links on the right</span>
-                <ul class="footer__right--list">
-                    <li class="footer__right--list-item"><a href="#">Please click this link</a></li>
-                    <li class="footer__right--list-item"><a href="#">Please click this link</a></li>
-                    <li class="footer__right--list-item"><a href="#">Please click this link</a></li>
-                    <li class="footer__right--list-item"><a href="#">Very importaht</a></li>
-                </ul>
+            <div class="active">
+                <img src="/img/photo4.png" alt="2">
             </div>
-        </nav>
-    </footer>
-
+            <div class="active">
+                <img src="/img/photo5.png" alt="3">
+            </div>
+            <div class="active">
+                <img src="/img/photo8.png" alt="4">
+            </div>
+            <div class="round">
+                <div class="yellow">
+                    <span>Be Part Of Our St</span>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <article >
+                <h1>March 2011</h1>
+                <h1>An Agency is born</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing. Suscipit laborum fuga sed officiis.</p>
+            </article>
+            <article>
+                <h1>July 2014</h1>
+                <h1>Phase Two Expansions</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing. Suscipit laborum fuga sed officiis.</p>
+            </article>
+        </div>
+    </div>
 </body>
-
 </html>
