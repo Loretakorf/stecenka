@@ -1,0 +1,30 @@
+.header {
+    background-color: white;
+    &__navigation {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 40px;
+        box-shadow: $box-shadow;
+    }
+    &__title {
+        &-span {
+            color: $primary-color;
+            padding: 0 10px;
+        }
+    }
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 30px;
+        list-style: none;
+    }
+    &__logo {
+        width: 20px;
+        height: 20px;
+    }
+    &__link {
+        text-decoration: none;
+        color: rgb(101, 39, 159);
+    }
+}

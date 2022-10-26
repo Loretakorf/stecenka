@@ -5,29 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <title>grid</title>
-    <link rel="stylesheet" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;500;700&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="overlay">
-            <img src="/img/photo5.png">
-        </div>
-        <div class="overlay">
-            <img src="/img/photo5.png" alt="">
-        </div>
-        <div class="overlay">
-            <img src="/img/photo5.png" alt="">
-        </div>
-        <div class="overlay">
-            <img src="/img/photo5.png" alt="">
-        </div>
-    </div>   
+    <header class="header">
+        <nav class="header__navigation">
+            <h1 class="header__title">Best<span class="header__title-span">ToDo</span>App</h1>
+            <ul class="header__list">
+                <li><a class="header__link" href=""></a><img class="header__logo" src="/img/facebook.svg" alt=""></li>
+                <li><a class="header__link" href=""></a><img class="header__logo" src="/img/twitter.svg" alt=""></li>
+                <li><a class="header__link" href=""></a><img class="header__logo" src="/img/linkedin.svg" alt=""></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <article class="main__article">
+            <h1 class="main__title">Edit Task</h1>
+            <form action="/index.html" method="post" class="form">
+                <div class="form__wrapper">
+                    <label class="form__wrapper-label" for="task">Task ID</label>
+                    <input class="form__wrapper-input form__wrapper-input1" type="text" id="task" name="task" placeholder="123456789">
+                </div>
+                <div class="form__wrapper">
+                    <label class="form__wrapper-label" for="name">Name</label>
+                    <input class="form__wrapper-input form__wrapper-input2" type="text" id="name" name="name" placeholder="Take out trashes">
+                </div>
+                <div class="form__wrapper">
+                    <label class="form__wrapper-label" for="name">Completed</label>
+                    <input class="form__wrapper-input" type="checkbox" id="checkbox" name="checkbox">
+                </div>
+                <button class="form__button">Edit</button>
+                <span class="form__span">There Was An Error</span>
+            </form>
+        </article>
+        <button class="main__button">Back To Tasks</button>
+    </main>
 </body>
 
 </html>

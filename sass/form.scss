@@ -1,0 +1,59 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    &__wrapper {
+        display: flex;
+        justify-content: flex-start;
+        gap: 40px;
+        &-second {
+            gap: 0;
+        }
+        &-button {
+            background-color: $primary-color;
+            color: white;
+            flex: 1;
+            border: none;
+            font-size: $font-size;
+        }
+        &-label {
+            font-weight: 500;
+            font-size: 18px;
+            flex: 1;
+            align-self: center;
+        }
+        &-input {
+            flex: 3;
+            font-size: $font-size;
+            padding: 10px;
+            
+        }
+        &-input1 {
+            border: none;
+        }
+        &-input2 {
+            background-color: #f3f3f7;
+            border: #d3d3d3;
+            border-radius: $border-radius;
+        }
+    }
+    &__button {
+        color: white;
+        text-align: center;
+        padding: 10px 0 10px 0;
+        background-color: $primary-color;
+        font-size: $font-size;
+        border: none;
+        border-radius: $border-radius;
+    }
+    &__span {
+        color: red;
+        text-align: center;
+        font-size: 12px;
+        &-second {
+            text-align: left;
+        }
+    }
+   
+}

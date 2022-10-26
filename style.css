@@ -1,117 +1,168 @@
-@keyframes banana {
-    0% {
-        top: -100%;
-        left: -100%;
-    }
-    50% {
-        top: 0;
-        left: 0;
-    }
-    100% {
-        top: 0;
-        left: 0;
-    }
+.header {
+  background-color: white;
 }
- 
+.header__navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  box-shadow: 2px 2px 5px #d3d3d3;
+}
+.header__title-span {
+  color: #5858cf;
+  padding: 0 10px;
+}
+.header__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+}
+.header__logo {
+  width: 20px;
+  height: 20px;
+}
+.header__link {
+  text-decoration: none;
+  color: rgb(101, 39, 159);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+}
+.form__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+}
+.form__wrapper-second {
+  gap: 0;
+}
+.form__wrapper-button {
+  background-color: #5858cf;
+  color: white;
+  flex: 1;
+  border: none;
+  font-size: 16px;
+}
+.form__wrapper-label {
+  font-weight: 500;
+  font-size: 18px;
+  flex: 1;
+  align-self: center;
+}
+.form__wrapper-input {
+  flex: 3;
+  font-size: 16px;
+  padding: 10px;
+}
+.form__wrapper-input1 {
+  border: none;
+}
+.form__wrapper-input2 {
+  background-color: #f3f3f7;
+  border: #d3d3d3;
+  border-radius: 5px;
+}
+.form__button {
+  color: white;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  background-color: #5858cf;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
+.form__span {
+  color: red;
+  text-align: center;
+  font-size: 12px;
+}
+.form__span-second {
+  text-align: left;
+}
+
+body,
+html {
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
 
 body {
-    margin: 20px auto;
-}
-.wrapper {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+  margin: 0;
+  background-color: rgb(241, 245, 247);
 }
 
-.overlay {
-    position: relative;
-    overflow: hidden; 
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
 }
-img {
-    width: 200px;
-    height: 200px;
+.main__article {
+  border: 2px solid lightgray;
+  background-color: white;
+  width: 700px;
+  box-shadow: 2px 2px 5px #d3d3d3;
+  margin-bottom: 40px;
 }
-.overlay::before {
-    content: "";
-    left: -100%;
-    top: -100%;
-    border: 20px solid white;
-    border-bottom: 20px solid black;
-    border-right: 20px solid black;
-    position: absolute;
-    width: 0;
-    height: 0;
-    /* transition: 2s linear ease-in-out; */
-    animation-name: banana;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-delay: 1s;
-    
+.main__article-second {
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 10px #d3d3d3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__title {
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.main__button {
+  background-color: rgb(26, 25, 25);
+  color: white;
+  padding: 12px 60px;
+  margin-top: 50px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
+.main__section {
+  display: flex;
+  align-items: center;
+  padding: 0 30px 0 60px;
+  position: relative;
+}
+.main__section-second {
+  gap: 16px;
+}
+.main__section-icon {
+  width: 15px;
+  height: 15px;
+}
+.main__section-icon1 {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  width: 20px;
+  height: 20px;
+}
+.main__section-header {
+  font-size: 18px;
+  font-weight: 400;
+}
+.main__section-header1 {
+  text-decoration: line-through;
 }
 
-/* .overlay:hover::before {
-    top: 0;
-}  */
-
-
-
-
-
-  
-
-
-/* 
-div {
-    transform: rotate(0);
-    background-color: brown;
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    left: 0;
-    animation: banana 2s linear;
-    /* animation-name: banana;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
-    animation-delay: 5000ms;
-    animation-direction: reverse; */
-
-    /* will-change: transform;
-}
-@keyframes banana {
-    0% {
-        left: 0;
-    }
-    10% {
-        transform: rotate(90deg);
-    }
-    40% {
-        transform: rotate(360deg);
-    }
-    50% {
-        left: 300px;
-    }
-    100% {
-        left: 1800px;
-        transform: rotate(1900deg);
-    }
-} 
-
-button {
-    background-color: white;border: 1px solid black;
-    border-radius: 10px;
-    padding: 10px 30px;
-    font-size: 4rem;
-    transition: font-size 2s linear 2s; */
-    /* transition-duration: 1000ms;
-    transition-property: background-color, border-radius, font-size;
-    transition-delay: 1s;
-    transition-timing-function: ease-in; */
-
-/* }  */
-
-
-
-
-
+/*# sourceMappingURL=style.css.map */
